@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Regelwerk – Werkwijze. Zes fasen, dagelijks zicht.</title>
-  <meta name="description" content="Hoe Regelwerk werkt: van verkennen tot nazorg. Elke dag een update, samen aftekenen, geen verrassingen.">
+  <title>Regelwerk – Werkwijze. Stap voor stap.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -12,209 +11,100 @@
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="logo">Regelwerk</a>
-    <div class="nav-links">
-      <a href="index.html">Start</a>
-      <a href="werkwijze.html">Werkwijze</a>
-      <a href="over-robin.html">Over Robin</a>
-      <a href="projecten.html">Projecten</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn-small">Gratis intake</a>
-    </div>
-    <button class="mobile-menu-btn" aria-label="Menu openen">☰</button>
-  </div>
-</nav>
+<nav class="navbar"><div class="nav-container"><a href="index.html" class="logo">Regelwerk</a><div class="nav-links"><a href="index.html">Start</a><a href="werkwijze.html">Werkwijze</a><a href="over-robin.html">Over Robin</a><a href="projecten.html">Projecten</a><a href="contact.html">Contact</a><a href="contact.html" class="btn-small">Gratis intake</a></div><button class="mobile-menu-btn">☰</button></div></nav>
+<div class="mobile-menu" id="mobileMenu"><button class="close-menu">✕</button><a href="index.html">Start</a><a href="werkwijze.html">Werkwijze</a><a href="over-robin.html">Over Robin</a><a href="projecten.html">Projecten</a><a href="contact.html">Contact</a><a href="contact.html" class="btn-primary btn-block">Gratis intake</a></div>
 
-<div class="mobile-menu" id="mobileMenu">
-  <button class="close-menu" aria-label="Menu sluiten">✕</button>
-  <a href="index.html">Start</a>
-  <a href="werkwijze.html">Werkwijze</a>
-  <a href="over-robin.html">Over Robin</a>
-  <a href="projecten.html">Projecten</a>
-  <a href="contact.html">Contact</a>
-  <a href="contact.html" class="btn-primary">Gratis intake</a>
-</div>
-
-<!-- Held werkwijze -->
 <section class="page-hero">
+  <div class="container"><h1>Zo werken wij. Stap voor stap.</h1><p class="subtitle">Geen verrassingen. Wel duidelijke afspraken en dagelijkse updates.</p></div>
+</section>
+
+<!-- Verticale stappenlijst (Optie A) -->
+<section class="process-steps">
   <div class="container">
-    <h1>Zo werken wij. Stap voor stap.</h1>
-    <p class="subtitle">Geen verrassingen. Wel duidelijke afspraken en dagelijkse updates.</p>
-  </div>
-</section>
-
-<!-- Bouwtekening (visuele procesplaat) -->
-<section class="blueprint">
-  <div class="blueprint-container">
-    <div class="blueprint-grid">
-      <!-- Bovenste laag: Wat Robin regelt -->
-      <div class="layer-top">
-        <div class="annot-label">Wat Robin regelt</div>
-        <div class="annotations">
-          <div class="annot">Opname en wensen</div>
-          <div class="annot">Ontwerp en offerte</div>
-          <div class="annot">Planning en vakmensen</div>
-          <div class="annot">Bouwcoördinatie</div>
-          <div class="annot">Controle en oplevering</div>
-          <div class="annot">Nazorg</div>
-        </div>
-      </div>
-
-      <!-- Middellijn met fasekaders -->
-      <div class="layer-phases">
-        <div class="phase-line"></div>
-        <div class="phases">
-          <div class="phase-node" data-phase="1">
-            <div class="phase-box">01 Verkennen</div>
-            <div class="phase-circle">AKKOORD</div>
-          </div>
-          <div class="phase-node" data-phase="2">
-            <div class="phase-box">02 Ontwerpen</div>
-            <div class="phase-circle">AKKOORD</div>
-          </div>
-          <div class="phase-node" data-phase="3">
-            <div class="phase-box">03 Regelen</div>
-            <div class="phase-circle">AKKOORD</div>
-          </div>
-          <div class="phase-node" data-phase="4">
-            <div class="phase-box">04 Bouwen</div>
-            <div class="phase-circle">AKKOORD</div>
-          </div>
-          <div class="phase-node" data-phase="5">
-            <div class="phase-box">05 Controleren</div>
-            <div class="phase-circle">AKKOORD</div>
-          </div>
-          <div class="phase-node" data-phase="6">
-            <div class="phase-box">06 Nazorg</div>
-            <div class="phase-circle">AKKOORD</div>
+    <div class="step-list">
+      <!-- Fase 1 -->
+      <div class="step-item">
+        <div class="step-marker"><span class="step-nr">1</span><div class="step-line"></div></div>
+        <div class="step-content">
+          <div class="step-header"><h3>Verkennen</h3><span class="step-akkoord">AKKOORD</span></div>
+          <div class="step-details">
+            <div class="step-robin"><strong>Robin regelt</strong> Intake thuis, opname, inventarisatie wensen en budget.</div>
+            <div class="step-klant"><strong>Jij krijgt</strong> Een verslag van het gesprek en een globale inschatting.</div>
+            <div class="step-sign">Aftekenmoment: scope akkoord.</div>
           </div>
         </div>
       </div>
-
-      <!-- Onderste laag: Wat jij krijgt -->
-      <div class="layer-bottom">
-        <div class="annot-label">Wat jij als klant krijgt</div>
-        <div class="annotations">
-          <div class="annot">Intakeverslag</div>
-          <div class="annot">Offerte en planning</div>
-          <div class="annot">Startdatum bevestigd</div>
-          <div class="annot">Dagelijkse updates</div>
-          <div class="annot">Opleverrapport</div>
-          <div class="annot">Check‑in na 4 weken</div>
+      <!-- Fase 2 -->
+      <div class="step-item">
+        <div class="step-marker"><span class="step-nr">2</span><div class="step-line"></div></div>
+        <div class="step-content">
+          <div class="step-header"><h3>Ontwerpen</h3><span class="step-akkoord">AKKOORD</span></div>
+          <div class="step-details">
+            <div class="step-robin"><strong>Robin regelt</strong> Ontwerp, materiaalkeuze, gedetailleerde offerte.</div>
+            <div class="step-klant"><strong>Jij krijgt</strong> Definitief ontwerp en een volledige offerte met planning.</div>
+            <div class="step-sign">Aftekenmoment: offerte akkoord.</div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Titelblok -->
-    <div class="title-block">
-      regelwerk.nl<br>
-      Werkproces<br>
-      Schaal 1 op 1
-    </div>
-  </div>
-</section>
-
-<!-- Uitgebreide uitleg per fase -->
-<section class="phase-details">
-  <div class="container">
-    <div class="phase-card" id="phase1">
-      <h3>Fase 1. Verkennen</h3>
-      <p>Robin komt bij je thuis voor een intake. Hij neemt de bestaande situatie op, luistert naar je wensen en bespreekt het budget en de tijdlijn.</p>
-      <div class="deliverable">
-        <strong>Jij krijgt</strong>
-        <ol>
-          <li>Een verslag van het intakegesprek.</li>
-          <li>Een globale inschatting van kosten en doorlooptijd.</li>
-        </ol>
+      <!-- Fase 3 -->
+      <div class="step-item">
+        <div class="step-marker"><span class="step-nr">3</span><div class="step-line"></div></div>
+        <div class="step-content">
+          <div class="step-header"><h3>Regelen</h3><span class="step-akkoord">AKKOORD</span></div>
+          <div class="step-details">
+            <div class="step-robin"><strong>Robin regelt</strong> Vergunningen, vakmensen inplannen, materialen bestellen.</div>
+            <div class="step-klant"><strong>Jij krijgt</strong> Overzicht van vergunningen en een definitief projectplan met startdatum.</div>
+            <div class="step-sign">Aftekenmoment: start akkoord.</div>
+          </div>
+        </div>
       </div>
-      <div class="sign-off">Aftekenmoment: Scope akkoord.</div>
-    </div>
-    <div class="phase-card" id="phase2">
-      <h3>Fase 2. Ontwerpen</h3>
-      <p>We maken een definitief ontwerp, kiezen materialen en stellen een gedetailleerde offerte op. Alle keuzes worden duidelijk vastgelegd.</p>
-      <div class="deliverable">
-        <strong>Jij krijgt</strong>
-        <ol>
-          <li>Een definitief ontwerp of tekening.</li>
-          <li>Een volledige offerte met specificaties en planning.</li>
-        </ol>
+      <!-- Fase 4 -->
+      <div class="step-item">
+        <div class="step-marker"><span class="step-nr">4</span><div class="step-line"></div></div>
+        <div class="step-content">
+          <div class="step-header"><h3>Bouwen</h3><span class="step-akkoord">AKKOORD</span></div>
+          <div class="step-details">
+            <div class="step-robin"><strong>Robin regelt</strong> Dagelijkse coördinatie, kwaliteitscontrole, zelf meewerken.</div>
+            <div class="step-klant"><strong>Jij krijgt</strong> Elke dag een update met foto's en een wekelijks voortgangsoverzicht.</div>
+            <div class="step-sign">Aftekenmoment: na elke mijlpaal (bijv. elektra gereed).</div>
+          </div>
+        </div>
       </div>
-      <div class="sign-off">Aftekenmoment: Offerte akkoord.</div>
-    </div>
-    <div class="phase-card" id="phase3">
-      <h3>Fase 3. Regelen</h3>
-      <p>Robin vraagt vergunningen aan, plant de vakmensen en bestelt materialen. Alles is klaar voordat de eerste schop de grond in gaat.</p>
-      <div class="deliverable">
-        <strong>Jij krijgt</strong>
-        <ol>
-          <li>Een overzicht van vergunningen.</li>
-          <li>Een definitief projectplan met startdatum.</li>
-        </ol>
+      <!-- Fase 5 -->
+      <div class="step-item">
+        <div class="step-marker"><span class="step-nr">5</span><div class="step-line"></div></div>
+        <div class="step-content">
+          <div class="step-header"><h3>Controleren</h3><span class="step-akkoord">AKKOORD</span></div>
+          <div class="step-details">
+            <div class="step-robin"><strong>Robin regelt</strong> Eindcontrole, opleveringsinspectie samen met jou, puntjes aanpakken.</div>
+            <div class="step-klant"><strong>Jij krijgt</strong> Opleverrapport, garantiebewijzen en documentatie.</div>
+            <div class="step-sign">Aftekenmoment: oplevering akkoord.</div>
+          </div>
+        </div>
       </div>
-      <div class="sign-off">Aftekenmoment: Start akkoord.</div>
-    </div>
-    <div class="phase-card" id="phase4">
-      <h3>Fase 4. Bouwen</h3>
-      <p>Robin coördineert dagelijks de vakmensen, controleert de kwaliteit en werkt zelf mee. Aan het einde van elke dag ontvang je een update met foto's.</p>
-      <div class="deliverable">
-        <strong>Jij krijgt</strong>
-        <ol>
-          <li>Een dagelijkse update (tekst en foto's).</li>
-          <li>Een wekelijks voortgangsoverzicht.</li>
-        </ol>
+      <!-- Fase 6 -->
+      <div class="step-item">
+        <div class="step-marker"><span class="step-nr">6</span></div>
+        <div class="step-content">
+          <div class="step-header"><h3>Nazorg</h3><span class="step-akkoord">AKKOORD</span></div>
+          <div class="step-details">
+            <div class="step-robin"><strong>Robin regelt</strong> Check‑in na 4 weken, garantieafhandeling.</div>
+            <div class="step-klant"><strong>Jij krijgt</strong> Een nazorgbezoek of telefoongesprek, afronding garantie.</div>
+            <div class="step-sign">Aftekenmoment: tevredenheid bevestigd.</div>
+          </div>
+        </div>
       </div>
-      <div class="sign-off">Aftekenmoment: Na elke mijlpaal (bijvoorbeeld elektra gereed) tekenen we samen af.</div>
-    </div>
-    <div class="phase-card" id="phase5">
-      <h3>Fase 5. Controleren</h3>
-      <p>Eindcontrole door Robin, samen met jou een opleveringsinspectie. Eventuele puntjes worden direct aangepakt.</p>
-      <div class="deliverable">
-        <strong>Jij krijgt</strong>
-        <ol>
-          <li>Een opleverrapport met checklist.</li>
-          <li>Garantiebewijzen en documentatie.</li>
-        </ol>
-      </div>
-      <div class="sign-off">Aftekenmoment: Oplevering akkoord.</div>
-    </div>
-    <div class="phase-card" id="phase6">
-      <h3>Fase 6. Nazorg</h3>
-      <p>Vier weken na oplevering belt Robin om te controleren of alles naar wens werkt. Eventuele garantiepunten worden afgehandeld.</p>
-      <div class="deliverable">
-        <strong>Jij krijgt</strong>
-        <ol>
-          <li>Een nazorgcheck (telefonisch of op bezoek).</li>
-          <li>Een afronding van de garantieafhandeling.</li>
-        </ol>
-      </div>
-      <div class="sign-off">Aftekenmoment: Tevredenheid bevestigd.</div>
     </div>
   </div>
 </section>
 
-<!-- Afsluiting -->
 <section class="summary-cta">
-  <div class="container">
-    <p class="summary-text">Dus: één plan, één regisseur, dagelijks zicht. Geen gedoe.</p>
-    <a href="contact.html" class="btn-primary btn-large">Start met een gratis intake</a>
-  </div>
+  <div class="container"><p class="summary-text">Dus: één plan, één regisseur, dagelijks zicht. Geen gedoe.</p><a href="contact.html" class="btn-primary btn-large">Start met een gratis intake</a></div>
 </section>
 
-<!-- Voettekst (zelfde als index) -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div><div class="footer-logo">Regelwerk</div><p class="footer-tagline">Verbouwen zonder gedoe</p></div>
-      <div><h4>Overzicht</h4><a href="index.html">Start</a><a href="werkwijze.html">Werkwijze</a><a href="over-robin.html">Over Robin</a><a href="projecten.html">Projecten</a><a href="contact.html">Contact</a></div>
-      <div><h4>Contact</h4><p>info@regelwerk.nl</p><p>Mijdrecht, Randstad</p></div>
-      <div><h4>Volg ons</h4><div class="social-links"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Instagram">ig</a></div></div>
-    </div>
-    <div class="footer-bottom"><p>© 2026 Regelwerk. Privacyverklaring. Algemene voorwaarden.</p></div>
-  </div>
-</footer>
-
-<a href="https://wa.me/31612345678" class="whatsapp-float" target="_blank">💬</a>
+<footer class="footer"><div class="container"><div class="footer-grid"><div><div class="footer-logo">Regelwerk</div><p>Verbouwen zonder gedoe</p></div><div><h4>Overzicht</h4><a href="index.html">Start</a><a href="werkwijze.html">Werkwijze</a><a href="over-robin.html">Over Robin</a><a href="projecten.html">Projecten</a><a href="contact.html">Contact</a></div><div><h4>Contact</h4><p>info@regelwerk.nl</p><p>Mijdrecht, Randstad</p></div><div><h4>Volg ons</h4><div class="social-links"><a href="#">in</a><a href="#">ig</a></div></div></div><div class="footer-bottom"><p>© 2026 Regelwerk. Privacyverklaring. Algemene voorwaarden.</p></div></div></footer>
+<a href="https://wa.me/31612345678" class="whatsapp-float">💬</a>
+<a href="contact.html" class="floating-intake">📞</a>
 <script src="script.js"></script>
 </body>
 </html>
