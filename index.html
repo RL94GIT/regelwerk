@@ -1,194 +1,252 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regelwerk — Verbouwen zonder gedoe | Bouwcoördinatie</title>
-    <meta name="description" content="Wij zorgen voor overzicht, planning en afstemming bij je verbouwing. Eén aanspreekpunt, geen verrassingen en elke dag op de hoogte.">
-    <!-- Tailwind CSS & Google Fonts -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'warm-white': '#FFFDF8',
-                        'soft-beige': '#F5EFE6',
-                        'light-blue': '#E8F3F7',
-                        'soft-green': '#E7F4EA',
-                        'text-dark': '#263238',
-                        'accent-orange': '#D97745',
-                        'blauwgrijs': '#5C7480',
-                        'cream-border': '#E6DED3',
-                        'footer-dark': '#1F2E35'
-                    },
-                    fontFamily: {
-                        sans: ['Nunito', 'sans-serif'],
-                        heading: ['Manrope', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body { font-family: 'Nunito', sans-serif; background-color: #FFFDF8; color: #263238; }
-        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regelwerk — Verbouwen zonder gedoe. Elke dag op de hoogte.</title>
+  <meta name="description" content="Regelwerk neemt je hele verbouwing uit handen. Één aanspreekpunt, dagelijkse updates, geen verrassingen. Werkgebied Mijdrecht, Utrecht, Amsterdam en omgeving.">
+  <meta property="og:title" content="Regelwerk — Verbouwen zonder gedoe">
+  <meta property="og:description" content="Één aanspreekpunt. Geen tussenpersonen. Geen verrassingen.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://regelwerk.nl">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Regelwerk",
+    "url": "https://regelwerk.nl",
+    "email": "info@regelwerk.nl",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mijdrecht",
+      "addressRegion": "Utrecht",
+      "addressCountry": "NL"
+    },
+    "description": "Bouwcoördinatie voor particuliere verbouwingen. Één aanspreekpunt, dagelijkse updates, geen verrassingen."
+  }
+  </script>
 </head>
-<body class="bg-warm-white text-text-dark antialiased">
+<body>
 
-    <!-- NAVIGATIE -->
-    <nav class="sticky top-0 z-50 h-[72px] bg-warm-white border-b border-cream-border flex items-center justify-between px-6 md:px-12">
-        <a href="index.html" class="text-2xl font-extrabold tracking-tight text-text-dark">Regelwerk</a>
-        <div class="hidden md:flex space-x-8 font-semibold">
-            <a href="index.html" class="text-accent-orange">Home</a>
-            <a href="werkwijze.html" class="hover:text-accent-orange transition">Werkwijze</a>
-            <a href="over-robin.html" class="hover:text-accent-orange transition">Over Robin</a>
-            <a href="projecten.html" class="hover:text-accent-orange transition">Projecten</a>
-            <a href="contact.html" class="hover:text-accent-orange transition">Contact</a>
-        </div>
-        <a href="contact.html" class="bg-accent-orange text-white px-5 py-2.5 rounded-full font-bold shadow-sm hover:bg-[#C56536] transition text-sm">Gratis intake</a>
-    </nav>
+  <!-- Navigatie -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">Regelwerk</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="pages/werkwijze.html">Werkwijze</a></li>
+      <li><a href="pages/over-robin.html">Over Robin</a></li>
+      <li><a href="pages/projecten.html">Projecten</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+    </ul>
+    <a href="pages/contact.html" class="nav-cta">Gratis intake</a>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
 
-    <!-- HERO SECTIE -->
-    <header class="py-16 md:py-24 px-6 md:px-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-        <div class="md:col-span-7 space-y-6">
-            <span class="text-xs font-bold uppercase tracking-widest text-blauwgrijs block">Regelwerk — verbouwen zonder gedoe</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight text-text-dark">
-                Je verbouwing. Goed geregeld. Zonder gedoe.
-            </h1>
-            <p class="text-lg md:text-xl text-blauwgrijs leading-relaxed">
-                Wij zorgen voor overzicht, planning en afstemming. Jij ziet elke dag wat er gebeurt. Eén aanspreekpunt, geen verrassingen.
-            </p>
-            <div class="pt-2">
-                <a href="contact.html" class="inline-block bg-accent-orange text-white px-8 py-4 rounded-full font-bold text-lg shadow-md hover:bg-[#C56536] transition">
-                    Gratis intakegesprek
-                </a>
-            </div>
-            <!-- Trust badges -->
-            <div class="pt-6 flex flex-wrap gap-4 text-sm font-semibold text-blauwgrijs">
-                <span class="flex items-center gap-1.5"><span class="text-accent-orange">✓</span> Dagelijkse updates</span>
-                <span class="flex items-center gap-1.5"><span class="text-accent-orange">✓</span> Eén aanspreekpunt</span>
-                <span class="flex items-center gap-1.5"><span class="text-accent-orange">✓</span> Geen verrassingen</span>
-            </div>
-        </div>
-        <div class="md:col-span-5 bg-soft-beige rounded-3xl p-8 aspect-square flex flex-col justify-center items-center relative overflow-hidden border border-cream-border">
-            <!-- Minimalistische schets-visualisatie i.p.v. corporate foto -->
-            <div class="w-48 h-48 border-4 border-dashed border-blauwgrijs/30 rounded-2xl flex items-center justify-center relative">
-                <span class="text-6xl">🏡</span>
-                <div class="absolute -top-4 -right-4 bg-soft-green border border-cream-border p-2 rounded-lg text-xl shadow-sm">✓</div>
-                <div class="absolute -bottom-4 -left-4 bg-light-blue border border-cream-border p-2 rounded-lg text-sm font-bold shadow-sm">📅 Planning</div>
-            </div>
-            <p class="mt-8 text-center text-sm font-medium text-blauwgrijs">Overzichtelijk van schets tot oplevering</p>
-        </div>
-    </header>
+  <!-- Mobiel menu -->
+  <div class="mobile-menu">
+    <span class="mobile-close">&times;</span>
+    <a href="index.html">Home</a>
+    <a href="pages/werkwijze.html">Werkwijze</a>
+    <a href="pages/over-robin.html">Over Robin</a>
+    <a href="pages/projecten.html">Projecten</a>
+    <a href="pages/contact.html">Contact</a>
+    <a href="pages/contact.html" class="btn btn-primary" style="margin-top: 16px;">Gratis intake</a>
+  </div>
 
-    <!-- VERGELIJKING SECTIE -->
-    <section class="py-16 bg-soft-beige/40 border-y border-cream-border px-6 md:px-12">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">Hoe het werkt (en hoe het vaak helaas gaat)</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Zonder -->
-                <div class="bg-white p-8 rounded-2xl border border-cream-border space-y-4">
-                    <h3 class="text-xl font-bold text-red-700 flex items-center gap-2">✕ Zonder Regelwerk</h3>
-                    <ul class="space-y-3 text-blauwgrijs text-sm md:text-base">
-                        <li class="flex items-start gap-2">• Je belt zelf met vier verschillende vakmensen die op elkaar wachten.</li>
-                        <li class="flex items-start gap-2">• Onduidelijke planningen die steeds weer maanden uitlopen.</li>
-                        <li class="flex items-start gap-2">• Financiële verrassingen en onverwachte meerprijzen achteraf.</li>
-                        <li class="flex items-start gap-2">• Je hoort pas iets van de bouwplaats als er een groot probleem is.</li>
-                    </ul>
-                </div>
-                <!-- Met -->
-                <div class="bg-soft-green p-8 rounded-2xl border border-cream-border space-y-4">
-                    <h3 class="text-xl font-bold text-emerald-800 flex items-center gap-2">✓ Mét Regelwerk</h3>
-                    <ul class="space-y-3 text-text-dark text-sm md:text-base font-medium">
-                        <li class="flex items-start gap-2"><span class="text-emerald-700 font-bold">✓</span> Eén vast aanspreekpunt dat alles voor je opvangt.</li>
-                        <li class="flex items-start gap-2"><span class="text-emerald-700 font-bold">✓</span> Een strakke, realistische planning vooraf die wél klopt.</li>
-                        <li class="flex items-start gap-2"><span class="text-emerald-700 font-bold">✓</span> Heldere prijsafspraken vooraf, geen onduidelijke rekeningen.</li>
-                        <li class="flex items-start gap-2"><span class="text-emerald-700 font-bold">✓</span> Elke avond een update met foto's van wat er gedaan is.</li>
-                    </ul>
-                </div>
-            </div>
-            <p class="text-center mt-8 text-lg font-semibold">Wij regelen de coördinatie, jij krijgt de rust.</p>
+  <!-- 5.1 Held -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <p class="label hero-label">Regelwerk — verbouwen zonder gedoe</p>
+          <h1>Je verbouwing. Goed geregeld. Zonder gedoe.</h1>
+          <p class="hero-subtitle">Wij zorgen voor overzicht, planning en afstemming. Jij ziet elke dag wat er gebeurt.</p>
+          <a href="pages/contact.html" class="btn btn-primary btn-lg">Gratis intakegesprek</a>
+          <div class="trust-badges">
+            <span class="trust-badge"><span class="check">✓</span> Dagelijkse updates</span>
+            <span class="trust-badge"><span class="check">✓</span> Één aanspreekpunt</span>
+            <span class="trust-badge"><span class="check">✓</span> Geen verrassingen</span>
+          </div>
         </div>
-    </section>
-
-    <!-- KORTE WERKWIJZE PREVIEW -->
-    <section class="py-16 px-6 md:px-12 max-w-5xl mx-auto text-center space-y-8">
-        <h2 class="text-3xl font-bold">Strak geregeld. Gewoon uitgelegd.</h2>
-        <!-- Horizontale lijn stappen -->
-        <div class="hidden md:flex justify-between items-center relative py-6">
-            <div class="absolute h-0.5 bg-cream-border left-0 right-0 top-1/2 -z-10"></div>
-            <div class="bg-warm-white px-3 flex flex-col items-center"><span class="w-8 h-8 rounded-full bg-light-blue border border-cream-border flex items-center justify-center font-bold text-sm">1</span><span class="text-xs font-semibold mt-2">Verkennen</span></div>
-            <div class="bg-warm-white px-3 flex flex-col items-center"><span class="w-8 h-8 rounded-full bg-light-blue border border-cream-border flex items-center justify-center font-bold text-sm">2</span><span class="text-xs font-semibold mt-2">Ontwerpen</span></div>
-            <div class="bg-warm-white px-3 flex flex-col items-center"><span class="w-8 h-8 rounded-full bg-light-blue border border-cream-border flex items-center justify-center font-bold text-sm">3</span><span class="text-xs font-semibold mt-2">Regelen</span></div>
-            <div class="bg-warm-white px-3 flex flex-col items-center"><span class="w-8 h-8 rounded-full bg-accent-orange text-white flex items-center justify-center font-bold text-sm">4</span><span class="text-xs font-bold mt-2 text-accent-orange">Bouwen</span></div>
-            <div class="bg-warm-white px-3 flex flex-col items-center"><span class="w-8 h-8 rounded-full bg-light-blue border border-cream-border flex items-center justify-center font-bold text-sm">5</span><span class="text-xs font-semibold mt-2">Controleren</span></div>
-            <div class="bg-warm-white px-3 flex flex-col items-center"><span class="w-8 h-8 rounded-full bg-light-blue border border-cream-border flex items-center justify-center font-bold text-sm">6</span><span class="text-xs font-semibold mt-2">Nazorg</span></div>
+        <div class="hero-visual reveal">
+          <div class="hero-illustration">🏠📋✓</div>
         </div>
-        <a href="werkwijze.html" class="inline-block text-accent-orange font-bold hover:underline">Bekijk hoe we stap voor stap werken →</a>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- REGIO SECTIE -->
-    <section class="py-16 bg-light-blue/40 border-t border-cream-border px-6 md:px-12 text-center">
-        <div class="max-w-3xl mx-auto space-y-4">
-            <h2 class="text-3xl font-bold">Waar we werken</h2>
-            <p class="text-lg text-blauwgrijs">
-                We starten vanuit **Mijdrecht en De Ronde Venen**. Daarnaast zijn we actief in **Woerden, Utrecht, Amsterdam en Amstelveen**. Zo zijn we altijd dichtbij om elke dag de bouw te controleren.
-            </p>
+  <!-- 5.2 Probleem / Oplossing -->
+  <section class="compare-section">
+    <div class="container">
+      <h2 style="text-align: center;">Waarom Regelwerk?</h2>
+      <div class="compare-grid">
+        <div class="compare-block without reveal">
+          <h3>Zonder Regelwerk:</h3>
+          <ul class="compare-list">
+            <li><span class="icon-x">✗</span> Meerdere partijen, geen overzicht</li>
+            <li><span class="icon-x">✗</span> Miscommunicatie tussen vakmensen</li>
+            <li><span class="icon-x">✗</span> Vertraging door onduidelijke planning</li>
+            <li><span class="icon-x">✗</span> Verrassingen en meerkosten</li>
+          </ul>
         </div>
-    </section>
-
-    <!-- GRATIS INTAKE BANNER -->
-    <section class="bg-light-blue py-16 px-6 text-center border-t border-cream-border">
-        <div class="max-w-3xl mx-auto space-y-6">
-            <h2 class="text-3xl font-bold">Klaar om te verbouwen zonder gedoe?</h2>
-            <p class="text-lg text-blauwgrijs font-medium">Plan een gratis intakegesprek bij jou thuis. Geen verplichtingen.</p>
-            <a href="contact.html" class="inline-block bg-accent-orange text-white px-8 py-3.5 rounded-full font-bold text-base shadow-md hover:bg-[#C56536] transition">Afspraak maken</a>
+        <div class="compare-block with reveal">
+          <h3>Met Regelwerk:</h3>
+          <ul class="compare-list">
+            <li><span class="icon-check">✓</span> Één aanspreekpunt voor alles</li>
+            <li><span class="icon-check">✓</span> Duidelijke planning en afstemming</li>
+            <li><span class="icon-check">✓</span> Dagelijkse voortgangsupdates</li>
+            <li><span class="icon-check">✓</span> Geen verrassingen, alles besproken</li>
+          </ul>
         </div>
-    </section>
+      </div>
+      <p class="compare-summary">Wij regelen de coördinatie, jij krijgt rust.</p>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-footer-dark text-white/90 py-12 px-6 md:px-12 border-t border-white/10">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-            <div class="space-y-3">
-                <span class="text-xl font-bold tracking-tight text-white block">Regelwerk</span>
-                <p class="text-sm text-white/60">Verbouwen zonder gedoe. Elke dag op de hoogte.</p>
-            </div>
-            <div class="space-y-2 flex flex-col text-sm">
-                <span class="font-bold text-white tracking-wide mb-1">Sitemap</span>
-                <a href="index.html" class="text-white/60 hover:text-accent-orange">Home</a>
-                <a href="werkwijze.html" class="text-white/60 hover:text-accent-orange">Werkwijze</a>
-                <a href="over-robin.html" class="text-white/60 hover:text-accent-orange">Over Robin</a>
-                <a href="projecten.html" class="text-white/60 hover:text-accent-orange">Projecten</a>
-                <a href="contact.html" class="text-white/60 hover:text-accent-orange">Contact</a>
-            </div>
-            <div class="space-y-2 text-sm text-white/60">
-                <span class="font-bold text-white tracking-wide mb-1 block">Contact</span>
-                <p>info@regelwerk.nl</p>
-                <p>Regio Randstad & Mijdrecht</p>
-            </div>
-            <div class="space-y-2 text-sm text-white/60">
-                <span class="font-bold text-white tracking-wide mb-1 block">Volg ons</span>
-                <a href="#" class="hover:text-accent-orange block">Instagram</a>
-                <a href="#" class="hover:text-accent-orange block">LinkedIn</a>
-            </div>
+  <!-- 5.3 Werkwijze compact -->
+  <section class="process-compact">
+    <div class="container">
+      <p class="label" style="text-align: center;">Onze aanpak</p>
+      <h2 style="text-align: center;">Zo brengen wij structuur</h2>
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="step-dot">1</div>
+          <span class="step-label">Verkennen</span>
         </div>
-        <div class="max-w-7xl mx-auto pt-6 border-t border-white/10 flex flex-wrap justify-between text-xs text-white/40 gap-4">
-            <p>© 2026 Regelwerk. Alle rechten voorbehouden.</p>
-            <div class="flex space-x-4">
-                <a href="#" class="hover:underline">Privacyverklaring</a>
-                <a href="#" class="hover:underline">Algemene voorwaarden</a>
-            </div>
+        <div class="process-step reveal">
+          <div class="step-dot">2</div>
+          <span class="step-label">Ontwerpen</span>
         </div>
-    </footer>
+        <div class="process-step reveal">
+          <div class="step-dot">3</div>
+          <span class="step-label">Regelen</span>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-dot">4</div>
+          <span class="step-label">Bouwen</span>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-dot">5</div>
+          <span class="step-label">Controleren</span>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-dot">6</div>
+          <span class="step-label">Nazorg</span>
+        </div>
+      </div>
+      <a href="pages/werkwijze.html" class="process-link">Bekijk hoe we stap voor stap werken →</a>
+    </div>
+  </section>
 
-    <!-- WHATSAPP ZVEVENDE KNOP -->
-    <a href="https://wa.me/31612345678" target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-105 transition flex items-center justify-center z-50 group">
-        <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 font-bold text-sm whitespace-nowrap group-hover:mr-2">Direct chatten met Robin</span>
-        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.411 0 11.973 0c3.178.001 6.165 1.24 8.407 3.485 2.242 2.246 3.476 5.237 3.475 8.417-.004 6.621-5.355 11.97-11.919 11.97-1.999-.001-3.959-.5-5.711-1.45L0 24zm6.59-3.771c1.648.978 3.262 1.489 4.794 1.49 5.351 0 9.709-4.322 9.712-9.634.001-2.574-1.002-4.994-2.824-6.82C16.449 3.439 14.05 2.431 11.973 2.43c-5.351 0-9.713 4.323-9.716 9.636-.001 1.623.437 3.21 1.266 4.616l-.993 3.625 3.717-.978zm11.387-6.864c-.29-.146-1.715-.847-1.976-.942-.261-.096-.451-.144-.64.145-.19.289-.738.942-.905 1.134-.167.192-.335.216-.625.072-.29-.145-1.225-.451-2.333-1.44-1.108-.989-1.858-2.21-2.075-2.5-.217-.29-.023-.447.122-.592.13-.13.29-.337.435-.506.145-.169.193-.289.29-.481.096-.193.048-.361-.024-.506-.072-.145-.64-1.54-.877-2.118-.23-.556-.465-.48-.64-.488-.166-.008-.356-.01-.546-.01-.19 0-.501.072-.762.361-.261.289-.997.975-.997 2.379 0 1.403 1.022 2.764 1.165 2.957.143.192 2.013 3.074 4.877 4.315.681.295 1.213.471 1.627.603.683.216 1.305.186 1.797.113.548-.082 1.716-.701 1.958-1.378.242-.677.242-1.258.17-1.378-.072-.119-.261-.191-.551-.337z"/></svg>
-    </a>
+  <!-- 5.4 Vertrouwenssectie -->
+  <section class="features-section">
+    <div class="container">
+      <p class="label" style="text-align: center;">Onze belofte</p>
+      <h2 style="text-align: center;">Strak geregeld. Gewoon uitgelegd. Elke dag zichtbaar.</h2>
+      <div class="features-grid">
+        <div class="feature-block reveal">
+          <span class="feature-icon">📊</span>
+          <h3>Projectmanagement dat werkt</h3>
+          <p>Planningen die kloppen, risico's vooraf besproken, heldere communicatie van begin tot eind.</p>
+        </div>
+        <div class="feature-block reveal">
+          <span class="feature-icon">🔨</span>
+          <h3>Met de handen in de klei</h3>
+          <p>Robin staat elke dag op de bouwplaats, doet controles en werkt waar nodig mee. Geen vergaderlagen, maar zichtbaar resultaat.</p>
+        </div>
+        <div class="feature-block reveal">
+          <span class="feature-icon">📱</span>
+          <h3>Elke dag een update</h3>
+          <p>Aan het einde van de dag een bericht met foto's en wat er is gedaan. Zo weet je altijd waar je aan toe bent.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- 5.5 Regio -->
+  <section class="region-section">
+    <div class="container">
+      <p class="label">Werkgebied</p>
+      <h2>Waar we werken</h2>
+      <p class="subtitle" style="margin: 16px auto 0;">We starten in Mijdrecht en De Ronde Venen, en werken door in Woerden, Utrecht, Amsterdam en Amstelveen.</p>
+      <div class="map-placeholder reveal">🗺️</div>
+      <p class="region-list">Mijdrecht · De Ronde Venen · Woerden · Utrecht · Amsterdam · Amstelveen</p>
+    </div>
+  </section>
+
+  <!-- 5.6 Afsluitende banner -->
+  <section class="intake-banner beige">
+    <div class="container">
+      <h2>Klaar om te verbouwen zonder gedoe?</h2>
+      <p>Plan een gratis intakegesprek. Geen verplichtingen.</p>
+      <a href="pages/contact.html" class="btn btn-primary">Afspraak maken</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Regelwerk</div>
+          <p class="footer-tagline">Verbouwen zonder gedoe.<br>Elke dag op de hoogte.</p>
+        </div>
+        <div>
+          <h4>Sitemap</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/werkwijze.html">Werkwijze</a></li>
+            <li><a href="pages/over-robin.html">Over Robin</a></li>
+            <li><a href="pages/projecten.html">Projecten</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@regelwerk.nl">info@regelwerk.nl</a></li>
+            <li>Mijdrecht (Randstad)</li>
+            <li>Bereikbaar: ma–vr, 08:00–18:00</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Volg ons</h4>
+          <div class="social-links">
+            <a href="#" title="LinkedIn">in</a>
+            <a href="#" title="Instagram">📷</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Regelwerk</span>
+        <span><a href="#">Privacyverklaring</a> · <a href="#">Algemene voorwaarden</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp knop -->
+  <a href="https://wa.me/31612345678" class="whatsapp-float" target="_blank" rel="noopener">
+    <span>💬</span>
+    <span class="whatsapp-tooltip">Direct chatten met Robin</span>
+  </a>
+
+  <!-- Cookie banner -->
+  <div class="cookie-banner" style="display: none;">
+    <p>We gebruiken alleen functionele cookies. <a href="#">Lees meer</a></p>
+    <div class="cookie-buttons">
+      <button class="btn btn-primary cookie-accept">Akkoord</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
