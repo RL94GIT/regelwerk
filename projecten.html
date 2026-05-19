@@ -1,73 +1,192 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projecten — Regelwerk | Ons Werk & Inspiratie</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = { theme: { extend: { colors: { 'warm-white': '#FFFDF8', 'soft-beige': '#F5EFE6', 'light-blue': '#E8F3F7', 'soft-green': '#E7F4EA', 'text-dark': '#263238', 'accent-orange': '#D97745', 'blauwgrijs': '#5C7480', 'cream-border': '#E6DED3', 'footer-dark': '#1F2E35' }, fontFamily: { sans: ['Nunito', 'sans-serif'], heading: ['Manrope', 'sans-serif'] } } } }
-    </script>
-    <style>body { font-family: 'Nunito', sans-serif; background-color: #FFFDF8; color: #263238; } h1, h2, h3 { font-family: 'Manrope', sans-serif; }</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projecten — Ons werk, jouw inspiratie | Regelwerk</title>
+  <meta name="description" content="Bekijk onze verbouwingsprojecten. Van renovatie tot uitbouw. Elke dag foto-updates en persoonlijk contact. Werkgebied Mijdrecht en omgeving.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body class="bg-warm-white text-text-dark antialiased">
+<body>
 
-    <!-- NAVIGATIE -->
-    <nav class="sticky top-0 z-50 h-[72px] bg-warm-white border-b border-cream-border flex items-center justify-between px-6 md:px-12">
-        <a href="index.html" class="text-2xl font-extrabold tracking-tight text-text-dark">Regelwerk</a>
-        <div class="hidden md:flex space-x-8 font-semibold">
-            <a href="index.html" class="hover:text-accent-orange transition">Home</a>
-            <a href="werkwijze.html" class="hover:text-accent-orange transition">Werkwijze</a>
-            <a href="over-robin.html" class="hover:text-accent-orange transition">Over Robin</a>
-            <a href="projecten.html" class="text-accent-orange">Projecten</a>
-            <a href="contact.html" class="hover:text-accent-orange transition">Contact</a>
-        </div>
-        <a href="contact.html" class="bg-accent-orange text-white px-5 py-2.5 rounded-full font-bold shadow-sm hover:bg-[#C56536] transition text-sm">Gratis intake</a>
-    </nav>
+  <nav class="navbar">
+    <a href="../index.html" class="logo">Regelwerk</a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="werkwijze.html">Werkwijze</a></li>
+      <li><a href="over-robin.html">Over Robin</a></li>
+      <li><a href="projecten.html" class="active">Projecten</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Gratis intake</a>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
 
-    <!-- KOP -->
-    <header class="py-12 text-center max-w-3xl mx-auto px-6 space-y-2">
-        <h1 class="text-4xl font-extrabold tracking-tight">Ons werk. Jouw inspiratie.</h1>
-        <p class="text-lg text-blauwgrijs">Binnenkort vind je hier uitgebreide foto's en verhalen van afgeronde projecten.</p>
-    </header>
+  <div class="mobile-menu">
+    <span class="mobile-close">&times;</span>
+    <a href="../index.html">Home</a>
+    <a href="werkwijze.html">Werkwijze</a>
+    <a href="over-robin.html">Over Robin</a>
+    <a href="projecten.html">Projecten</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top: 16px;">Gratis intake</a>
+  </div>
 
-    <!-- PLACEHOLDER RASTER -->
-    <section class="py-12 max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Kaart 1 -->
-        <div class="bg-soft-beige rounded-2xl border border-cream-border overflow-hidden flex flex-col justify-between p-6 h-64">
-            <div class="space-y-2">
-                <span class="bg-white/80 text-accent-orange text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded inline-block">Binnenkort online</span>
-                <h3 class="text-xl font-bold">Volledige Uitbouw & Renovatie</h3>
-                <p class="text-sm text-blauwgrijs">Locatie: Mijdrecht</p>
+  <!-- 8.1 Held -->
+  <section class="hero">
+    <div class="container" style="text-align: center;">
+      <p class="label hero-label">Portfolio</p>
+      <h1>Ons werk. Jouw inspiratie.</h1>
+      <p class="hero-subtitle" style="margin: 0 auto;">Binnenkort de eerste projecten.</p>
+    </div>
+  </section>
+
+  <!-- 8.2 Projecten raster -->
+  <section class="features-section">
+    <div class="container">
+      <div class="project-grid">
+        <div class="project-card reveal">
+          <div class="project-image">📸</div>
+          <div class="project-info">
+            <h3>Renovatie woonkamer</h3>
+            <div class="project-meta">
+              <span>📍 Mijdrecht</span>
+              <span>🏠 Complete renovatie</span>
             </div>
-            <span class="text-xs font-semibold text-blauwgrijs/60">Verwachte status: In uitvoering</span>
+            <span class="status-badge status-upcoming">Aankomend</span>
+          </div>
         </div>
-        <!-- Kaart 2 -->
-        <div class="bg-soft-beige rounded-2xl border border-cream-border overflow-hidden flex flex-col justify-between p-6 h-64">
-            <div class="space-y-2">
-                <span class="bg-white/80 text-accent-orange text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded inline-block">Aankomend</span>
-                <h3 class="text-xl font-bold">Duurzame Badkamerrenovatie</h3>
-                <p class="text-sm text-blauwgrijs">Locatie: Amstelveen</p>
-            </div>
-            <span class="text-xs font-semibold text-blauwgrijs/60">Verwachte status: Planning gereed</span>
-        </div>
-        <!-- Kaart 3 -->
-        <div class="bg-soft-beige rounded-2xl border border-cream-border overflow-hidden flex flex-col justify-between p-6 h-64">
-            <div class="space-y-2">
-                <span class="bg-white/80 text-accent-orange text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded inline-block">Binnenkort online</span>
-                <h3 class="text-xl font-bold">Zolder Transformatie met Dakkapel</h3>
-                <p class="text-sm text-blauwgrijs">Locatie: Utrecht</p>
-            </div>
-            <span class="text-xs font-semibold text-blauwgrijs/60">Verwachte status: Startfase</span>
-        </div>
-    </section>
 
-    <!-- INSTAGRAM VOLGEN -->
-    <section class="py-12 bg-light-blue/30 border-t border-cream-border px-6 text-center space-y-4">
-        <h2 class="text-xl font-bold">Volg ons live op de bouwplaats</h2>
-        <p class="text-sm text-blauwgrijs max-w-md mx-auto">We delen dagelijks foto's, updates en handige tips rechtstreeks vanaf onze actieve verbouwingen op Instagram.</p>
-        <a href="#" class="inline-block bg-white border border-cream-border text-text-dark px-6 py-2 rounded-full font-bold shadow-sm hover:bg-soft-beige transition text-sm">@regelwerk.nl volgen</a>
-    </section>
+        <div class="project-card reveal">
+          <div class="project-image">📸</div>
+          <div class="project-info">
+            <h3>Uitbouw achterzijde</h3>
+            <div class="project-meta">
+              <span>📍 De Ronde Venen</span>
+              <span>🏗️ Uitbouw</span>
+            </div>
+            <span class="status-badge status-upcoming">Aankomend</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-image">📸</div>
+          <div class="project-info">
+            <h3>Badkamer verbouwing</h3>
+            <div class="project-meta">
+              <span>📍 Woerden</span>
+              <span>🛁 Badkamer</span>
+            </div>
+            <span class="status-badge status-upcoming">Aankomend</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-image">📸</div>
+          <div class="project-info">
+            <h3>Keukenrenovatie</h3>
+            <div class="project-meta">
+              <span>📍 Utrecht</span>
+              <span>🍳 Keuken</span>
+            </div>
+            <span class="status-badge status-active">In uitvoering</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-image">📸</div>
+          <div class="project-info">
+            <h3>Dakkapel plaatsen</h3>
+            <div class="project-meta">
+              <span>📍 Amsterdam</span>
+              <span>🏗️ Dakkapel</span>
+            </div>
+            <span class="status-badge status-upcoming">Aankomend</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-image">📸</div>
+          <div class="project-info">
+            <h3>Totaalrenovatie rijtjeshuis</h3>
+            <div class="project-meta">
+              <span>📍 Amstelveen</span>
+              <span>🏠 Totaalrenovatie</span>
+            </div>
+            <span class="status-badge status-upcoming">Aankomend</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8.3 Instagram -->
+  <section class="region-section">
+    <div class="container" style="text-align: center;">
+      <p class="label">Volg ons</p>
+      <h2>Dagelijkse updates op Instagram</h2>
+      <p class="subtitle" style="margin: 16px auto 24px;">Foto's van de bouwplaats, vooruitgang en achter-de-schermen momenten.</p>
+      <a href="https://instagram.com/regelwerk.nl" class="btn btn-secondary" target="_blank" rel="noopener">@regelwerk.nl op Instagram</a>
+    </div>
+  </section>
+
+  <!-- 8.4 Afsluitende banner -->
+  <section class="intake-banner beige">
+    <div class="container">
+      <h2>Heb je een verbouwingsplan?</h2>
+      <p>Laten we kennismaken. Een gratis intakegesprek bij jou thuis.</p>
+      <a href="contact.html" class="btn btn-primary">Gratis intake aanvragen</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Regelwerk</div>
+          <p class="footer-tagline">Verbouwen zonder gedoe.<br>Elke dag op de hoogte.</p>
+        </div>
+        <div>
+          <h4>Sitemap</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="werkwijze.html">Werkwijze</a></li>
+            <li><a href="over-robin.html">Over Robin</a></li>
+            <li><a href="projecten.html">Projecten</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@regelwerk.nl">info@regelwerk.nl</a></li>
+            <li>Mijdrecht (Randstad)</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Volg ons</h4>
+          <div class="social-links">
+            <a href="#">in</a>
+            <a href="#">📷</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Regelwerk</span>
+        <span><a href="#">Privacyverklaring</a> · <a href="#">Algemene voorwaarden</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/31612345678" class="whatsapp-float" target="_blank" rel="noopener">
+    <span>💬</span>
+    <span class="whatsapp-tooltip">Direct chatten met Robin</span>
+  </a>
+
+  <script src="../js/main.js"></script>
 </body>
 </html>
