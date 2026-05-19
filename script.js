@@ -21,25 +21,17 @@ document.addEventListener('DOMContentLoaded', () => {
   accordionItems.forEach(item => {
     const question = item.querySelector('.accordion-question');
     const icon = question.querySelector('.accordion-icon');
-    question.addEventListener('click', () => {
-      item.classList.toggle('open');
-      icon.textContent = item.classList.contains('open') ? '−' : '+';
-    });
+    if (icon) {
+      question.addEventListener('click', () => {
+        item.classList.toggle('open');
+        icon.textContent = item.classList.contains('open') ? '−' : '+';
+      });
+    } else {
+      question.addEventListener('click', () => item.classList.toggle('open'));
+    }
   });
 
-  // Smooth scroll for anchor links (werkwijze fase klik)
-  const phaseNodes = document.querySelectorAll('.phase-node');
-  phaseNodes.forEach(node => {
-    node.addEventListener('click', () => {
-      const phaseId = node.getAttribute('data-phase');
-      if (phaseId) {
-        const target = document.getElementById(`phase${phaseId}`);
-        if (target) target.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-
-  // Simuleer formulier verzending (alleen demo)
+  // Contact form (simulatie)
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
