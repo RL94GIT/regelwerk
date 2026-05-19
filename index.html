@@ -3,250 +3,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Regelwerk — Verbouwen zonder gedoe. Elke dag op de hoogte.</title>
-  <meta name="description" content="Regelwerk neemt je hele verbouwing uit handen. Één aanspreekpunt, dagelijkse updates, geen verrassingen. Werkgebied Mijdrecht, Utrecht, Amsterdam en omgeving.">
-  <meta property="og:title" content="Regelwerk — Verbouwen zonder gedoe">
-  <meta property="og:description" content="Één aanspreekpunt. Geen tussenpersonen. Geen verrassingen.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://regelwerk.nl">
-  <meta name="twitter:card" content="summary_large_image">
+  <title>Regelwerk – Verbouwen zonder gedoe</title>
+  <meta name="description" content="Regelwerk: bouwcoördinatie voor particulieren. Eén aanspreekpunt, dagelijkse updates, heldere planning. Van Mijdrecht tot de Randstad.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Regelwerk",
-    "url": "https://regelwerk.nl",
-    "email": "info@regelwerk.nl",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Mijdrecht",
-      "addressRegion": "Utrecht",
-      "addressCountry": "NL"
-    },
-    "description": "Bouwcoördinatie voor particuliere verbouwingen. Één aanspreekpunt, dagelijkse updates, geen verrassingen."
-  }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigatie -->
-  <nav class="navbar">
+<!-- Navigatie -->
+<nav class="navbar">
+  <div class="nav-container">
     <a href="index.html" class="logo">Regelwerk</a>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="pages/werkwijze.html">Werkwijze</a></li>
-      <li><a href="pages/over-robin.html">Over Robin</a></li>
-      <li><a href="pages/projecten.html">Projecten</a></li>
-      <li><a href="pages/contact.html">Contact</a></li>
-    </ul>
-    <a href="pages/contact.html" class="nav-cta">Gratis intake</a>
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="nav-links">
+      <a href="index.html">Start</a>
+      <a href="werkwijze.html">Werkwijze</a>
+      <a href="over-robin.html">Over Robin</a>
+      <a href="projecten.html">Projecten</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn-small">Gratis intake</a>
     </div>
-  </nav>
-
-  <!-- Mobiel menu -->
-  <div class="mobile-menu">
-    <span class="mobile-close">&times;</span>
-    <a href="index.html">Home</a>
-    <a href="pages/werkwijze.html">Werkwijze</a>
-    <a href="pages/over-robin.html">Over Robin</a>
-    <a href="pages/projecten.html">Projecten</a>
-    <a href="pages/contact.html">Contact</a>
-    <a href="pages/contact.html" class="btn btn-primary" style="margin-top: 16px;">Gratis intake</a>
+    <button class="mobile-menu-btn" aria-label="Menu openen">☰</button>
   </div>
+</nav>
 
-  <!-- 5.1 Held -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <p class="label hero-label">Regelwerk — verbouwen zonder gedoe</p>
-          <h1>Je verbouwing. Goed geregeld. Zonder gedoe.</h1>
-          <p class="hero-subtitle">Wij zorgen voor overzicht, planning en afstemming. Jij ziet elke dag wat er gebeurt.</p>
-          <a href="pages/contact.html" class="btn btn-primary btn-lg">Gratis intakegesprek</a>
-          <div class="trust-badges">
-            <span class="trust-badge"><span class="check">✓</span> Dagelijkse updates</span>
-            <span class="trust-badge"><span class="check">✓</span> Één aanspreekpunt</span>
-            <span class="trust-badge"><span class="check">✓</span> Geen verrassingen</span>
-          </div>
-        </div>
-        <div class="hero-visual reveal">
-          <div class="hero-illustration">🏠📋✓</div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-menu" aria-label="Menu sluiten">✕</button>
+  <a href="index.html">Start</a>
+  <a href="werkwijze.html">Werkwijze</a>
+  <a href="over-robin.html">Over Robin</a>
+  <a href="projecten.html">Projecten</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn-primary">Gratis intake</a>
+</div>
+
+<!-- Held -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-label">Regelwerk. Verbouwen zonder gedoe.</div>
+        <h1>Je verbouwing.<br>Goed geregeld.<br>Zonder gedoe.</h1>
+        <p class="hero-sub">Wij zorgen voor overzicht, planning en afstemming. Jij ziet elke dag wat er gebeurt.</p>
+        <a href="contact.html" class="btn-primary btn-large">Gratis intakegesprek</a>
+        <div class="trust-row">
+          <span>Dagelijkse updates</span>
+          <span>Eén aanspreekpunt</span>
+          <span>Geen verrassingen</span>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- 5.2 Probleem / Oplossing -->
-  <section class="compare-section">
-    <div class="container">
-      <h2 style="text-align: center;">Waarom Regelwerk?</h2>
-      <div class="compare-grid">
-        <div class="compare-block without reveal">
-          <h3>Zonder Regelwerk:</h3>
-          <ul class="compare-list">
-            <li><span class="icon-x">✗</span> Meerdere partijen, geen overzicht</li>
-            <li><span class="icon-x">✗</span> Miscommunicatie tussen vakmensen</li>
-            <li><span class="icon-x">✗</span> Vertraging door onduidelijke planning</li>
-            <li><span class="icon-x">✗</span> Verrassingen en meerkosten</li>
-          </ul>
-        </div>
-        <div class="compare-block with reveal">
-          <h3>Met Regelwerk:</h3>
-          <ul class="compare-list">
-            <li><span class="icon-check">✓</span> Één aanspreekpunt voor alles</li>
-            <li><span class="icon-check">✓</span> Duidelijke planning en afstemming</li>
-            <li><span class="icon-check">✓</span> Dagelijkse voortgangsupdates</li>
-            <li><span class="icon-check">✓</span> Geen verrassingen, alles besproken</li>
-          </ul>
-        </div>
+      <div class="hero-visual">
+        <div class="illustration-house"></div>
       </div>
-      <p class="compare-summary">Wij regelen de coördinatie, jij krijgt rust.</p>
-    </div>
-  </section>
-
-  <!-- 5.3 Werkwijze compact -->
-  <section class="process-compact">
-    <div class="container">
-      <p class="label" style="text-align: center;">Onze aanpak</p>
-      <h2 style="text-align: center;">Zo brengen wij structuur</h2>
-      <div class="process-steps">
-        <div class="process-step reveal">
-          <div class="step-dot">1</div>
-          <span class="step-label">Verkennen</span>
-        </div>
-        <div class="process-step reveal">
-          <div class="step-dot">2</div>
-          <span class="step-label">Ontwerpen</span>
-        </div>
-        <div class="process-step reveal">
-          <div class="step-dot">3</div>
-          <span class="step-label">Regelen</span>
-        </div>
-        <div class="process-step reveal">
-          <div class="step-dot">4</div>
-          <span class="step-label">Bouwen</span>
-        </div>
-        <div class="process-step reveal">
-          <div class="step-dot">5</div>
-          <span class="step-label">Controleren</span>
-        </div>
-        <div class="process-step reveal">
-          <div class="step-dot">6</div>
-          <span class="step-label">Nazorg</span>
-        </div>
-      </div>
-      <a href="pages/werkwijze.html" class="process-link">Bekijk hoe we stap voor stap werken →</a>
-    </div>
-  </section>
-
-  <!-- 5.4 Vertrouwenssectie -->
-  <section class="features-section">
-    <div class="container">
-      <p class="label" style="text-align: center;">Onze belofte</p>
-      <h2 style="text-align: center;">Strak geregeld. Gewoon uitgelegd. Elke dag zichtbaar.</h2>
-      <div class="features-grid">
-        <div class="feature-block reveal">
-          <span class="feature-icon">📊</span>
-          <h3>Projectmanagement dat werkt</h3>
-          <p>Planningen die kloppen, risico's vooraf besproken, heldere communicatie van begin tot eind.</p>
-        </div>
-        <div class="feature-block reveal">
-          <span class="feature-icon">🔨</span>
-          <h3>Met de handen in de klei</h3>
-          <p>Robin staat elke dag op de bouwplaats, doet controles en werkt waar nodig mee. Geen vergaderlagen, maar zichtbaar resultaat.</p>
-        </div>
-        <div class="feature-block reveal">
-          <span class="feature-icon">📱</span>
-          <h3>Elke dag een update</h3>
-          <p>Aan het einde van de dag een bericht met foto's en wat er is gedaan. Zo weet je altijd waar je aan toe bent.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 5.5 Regio -->
-  <section class="region-section">
-    <div class="container">
-      <p class="label">Werkgebied</p>
-      <h2>Waar we werken</h2>
-      <p class="subtitle" style="margin: 16px auto 0;">We starten in Mijdrecht en De Ronde Venen, en werken door in Woerden, Utrecht, Amsterdam en Amstelveen.</p>
-      <div class="map-placeholder reveal">🗺️</div>
-      <p class="region-list">Mijdrecht · De Ronde Venen · Woerden · Utrecht · Amsterdam · Amstelveen</p>
-    </div>
-  </section>
-
-  <!-- 5.6 Afsluitende banner -->
-  <section class="intake-banner beige">
-    <div class="container">
-      <h2>Klaar om te verbouwen zonder gedoe?</h2>
-      <p>Plan een gratis intakegesprek. Geen verplichtingen.</p>
-      <a href="pages/contact.html" class="btn btn-primary">Afspraak maken</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-logo">Regelwerk</div>
-          <p class="footer-tagline">Verbouwen zonder gedoe.<br>Elke dag op de hoogte.</p>
-        </div>
-        <div>
-          <h4>Sitemap</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/werkwijze.html">Werkwijze</a></li>
-            <li><a href="pages/over-robin.html">Over Robin</a></li>
-            <li><a href="pages/projecten.html">Projecten</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul class="footer-links">
-            <li><a href="mailto:info@regelwerk.nl">info@regelwerk.nl</a></li>
-            <li>Mijdrecht (Randstad)</li>
-            <li>Bereikbaar: ma–vr, 08:00–18:00</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Volg ons</h4>
-          <div class="social-links">
-            <a href="#" title="LinkedIn">in</a>
-            <a href="#" title="Instagram">📷</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 Regelwerk</span>
-        <span><a href="#">Privacyverklaring</a> · <a href="#">Algemene voorwaarden</a></span>
-      </div>
-    </div>
-  </footer>
-
-  <!-- WhatsApp knop -->
-  <a href="https://wa.me/31612345678" class="whatsapp-float" target="_blank" rel="noopener">
-    <span>💬</span>
-    <span class="whatsapp-tooltip">Direct chatten met Robin</span>
-  </a>
-
-  <!-- Cookie banner -->
-  <div class="cookie-banner" style="display: none;">
-    <p>We gebruiken alleen functionele cookies. <a href="#">Lees meer</a></p>
-    <div class="cookie-buttons">
-      <button class="btn btn-primary cookie-accept">Akkoord</button>
     </div>
   </div>
+</section>
 
-  <script src="js/main.js"></script>
+<!-- Probleem / Oplossing -->
+<section class="problem-solution">
+  <div class="container">
+    <div class="ps-grid">
+      <div class="ps-block">
+        <h3>Zonder Regelwerk</h3>
+        <ul class="ps-list">
+          <li>Meerdere partijen</li>
+          <li>Miscommunicatie</li>
+          <li>Vertraging</li>
+        </ul>
+        <div class="ps-line broken"></div>
+      </div>
+      <div class="ps-arrow">→</div>
+      <div class="ps-block">
+        <h3>Met Regelwerk</h3>
+        <ul class="ps-list">
+          <li>Eén aanspreekpunt</li>
+          <li>Duidelijke planning</li>
+          <li>Dagelijkse updates</li>
+        </ul>
+        <div class="ps-line solid"></div>
+      </div>
+    </div>
+    <p class="ps-conclusion">Wij regelen de coördinatie, jij krijgt rust.</p>
+  </div>
+</section>
+
+<!-- Werkwijze voorbeeld compact -->
+<section class="preview-process">
+  <div class="container">
+    <h2 class="section-title">Hoe we werken. In het kort.</h2>
+    <div class="mini-timeline">
+      <div class="mini-step">Verkennen</div>
+      <div class="mini-step">Ontwerpen</div>
+      <div class="mini-step">Regelen</div>
+      <div class="mini-step">Bouwen</div>
+      <div class="mini-step">Controleren</div>
+      <div class="mini-step">Nazorg</div>
+    </div>
+    <div class="text-center">
+      <a href="werkwijze.html" class="link-arrow">Bekijk hoe we stap voor stap werken →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Vertrouwenssectie -->
+<section class="trust">
+  <div class="container">
+    <h2 class="section-title">Strak geregeld. Gewoon uitgelegd. Elke dag zichtbaar.</h2>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-line"></div>
+        <h3>Projectmanagement dat werkt</h3>
+        <p>Planningen die kloppen, risico’s vooraf besproken, heldere communicatie.</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-line"></div>
+        <h3>Met de handen in de klei</h3>
+        <p>Robin staat elke dag op de bouwplaats, doet controles en werkt mee.</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-line"></div>
+        <h3>Elke dag een update</h3>
+        <p>Aan het einde van de dag een bericht met foto’s en wat er is gedaan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Regio en werkgebied -->
+<section class="region">
+  <div class="container">
+    <div class="region-grid">
+      <div>
+        <h2 class="region-title">Waar we werken</h2>
+        <p class="region-text">Start in Mijdrecht en De Ronde Venen, daarna Woerden, Utrecht, Amsterdam, Amstelveen.</p>
+        <div class="region-list">
+          <span>Mijdrecht</span> <span>De Ronde Venen</span>
+          <span>Woerden</span> <span>Utrecht</span>
+          <span>Amsterdam</span> <span>Amstelveen</span>
+        </div>
+      </div>
+      <div class="region-map">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=4.7%2C52.1%2C5.0%2C52.3&amp;layer=mapnik&amp;marker=52.2%2C4.85" width="100%" height="250" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gratis intake strook -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Klaar om te verbouwen zonder gedoe?</h2>
+    <p>Plan een gratis intakegesprek. Geen verplichtingen.</p>
+    <a href="contact.html" class="btn-primary btn-large">Afspraak maken</a>
+    <div class="cta-labels">
+      <span>Gratis intakegesprek</span>
+      <span>Geen verplichtingen</span>
+      <span>Binnen 48 uur reactie</span>
+    </div>
+  </div>
+</section>
+
+<!-- Voettekst -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Regelwerk</div>
+        <p class="footer-tagline">Verbouwen zonder gedoe</p>
+      </div>
+      <div>
+        <h4>Overzicht</h4>
+        <a href="index.html">Start</a>
+        <a href="werkwijze.html">Werkwijze</a>
+        <a href="over-robin.html">Over Robin</a>
+        <a href="projecten.html">Projecten</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>info@regelwerk.nl</p>
+        <p>Mijdrecht, Randstad</p>
+      </div>
+      <div>
+        <h4>Volg ons</h4>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">ig</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Regelwerk. Privacyverklaring. Algemene voorwaarden.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/31612345678" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Direct chatten met Robin">💬</a>
+
+<script src="script.js"></script>
 </body>
 </html>
