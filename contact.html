@@ -1,128 +1,271 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact & Veelgestelde Vragen — Regelwerk</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = { theme: { extend: { colors: { 'warm-white': '#FFFDF8', 'soft-beige': '#F5EFE6', 'light-blue': '#E8F3F7', 'soft-green': '#E7F4EA', 'text-dark': '#263238', 'accent-orange': '#D97745', 'blauwgrijs': '#5C7480', 'cream-border': '#E6DED3', 'footer-dark': '#1F2E35' }, fontFamily: { sans: ['Nunito', 'sans-serif'], heading: ['Manrope', 'sans-serif'] } } } }
-    </script>
-    <style>body { font-family: 'Nunito', sans-serif; background-color: #FFFDF8; color: #263238; } h1, h2, h3 { font-family: 'Manrope', sans-serif; }</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Gratis intakegesprek | Regelwerk</title>
+  <meta name="description" content="Plan een gratis intakegesprek bij jou thuis. Geen verplichtingen. Wij reageren binnen 48 uur. Bereikbaar in Mijdrecht, Utrecht, Amsterdam en omgeving.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Wat kost een verbouwing via Regelwerk?", "acceptedAnswer": {"@type": "Answer", "text": "De kosten hangen af van de omvang van je project. Tijdens het gratis intakegesprek bespreken we je wensen en maken we een transparante offerte. Geen verborgen kosten."}},
+      {"@type": "Question", "name": "Hoe lang duurt een gemiddeld project?", "acceptedAnswer": {"@type": "Answer", "text": "Een gemiddelde renovatie duurt 4 tot 12 weken, afhankelijk van de omvang. We maken vooraf een duidelijke planning zodat je weet waar je aan toe bent."}},
+      {"@type": "Question", "name": "Werken jullie met vaste partners?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, we werken met een vaste groep betrouwbare vakmensen. Zij kennen onze werkwijze en kwaliteitseisen. Zo houden we alles strak geregeld."}},
+      {"@type": "Question", "name": "Wat als er iets misgaat?", "acceptedAnswer": {"@type": "Answer", "text": "We lossen het direct op. Robin staat elke dag op de bouwplaats en signaleert problemen voor ze groot worden. En mocht er iets zijn, dan hoor je dat meteen van ons. Geen verrassingen."}},
+      {"@type": "Question", "name": "Kan ik zelf vakmensen aanbrengen?", "acceptedAnswer": {"@type": "Answer", "text": "In overleg is dat mogelijk. We coördineren dan alle partijen zodat iedereen op dezelfde lijn zit en het proces soepel verloopt."}},
+      {"@type": "Question", "name": "Werken jullie ook buiten de Randstad?", "acceptedAnswer": {"@type": "Answer", "text": "Momenteel werken we in Mijdrecht, De Ronde Venen, Woerden, Utrecht, Amsterdam en Amstelveen. Neem contact op als je net buiten dit gebied zit, dan kijken we of het past."}}
+    ]
+  }
+  </script>
 </head>
-<body class="bg-warm-white text-text-dark antialiased">
+<body>
 
-    <!-- NAVIGATIE -->
-    <nav class="sticky top-0 z-50 h-[72px] bg-warm-white border-b border-cream-border flex items-center justify-between px-6 md:px-12">
-        <a href="index.html" class="text-2xl font-extrabold tracking-tight text-text-dark">Regelwerk</a>
-        <div class="hidden md:flex space-x-8 font-semibold">
-            <a href="index.html" class="hover:text-accent-orange transition">Home</a>
-            <a href="werkwijze.html" class="hover:text-accent-orange transition">Werkwijze</a>
-            <a href="over-robin.html" class="hover:text-accent-orange transition">Over Robin</a>
-            <a href="projecten.html" class="hover:text-accent-orange transition">Projecten</a>
-            <a href="contact.html" class="text-accent-orange">Contact</a>
+  <nav class="navbar">
+    <a href="../index.html" class="logo">Regelwerk</a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="werkwijze.html">Werkwijze</a></li>
+      <li><a href="over-robin.html">Over Robin</a></li>
+      <li><a href="projecten.html">Projecten</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Gratis intake</a>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="mobile-menu">
+    <span class="mobile-close">&times;</span>
+    <a href="../index.html">Home</a>
+    <a href="werkwijze.html">Werkwijze</a>
+    <a href="over-robin.html">Over Robin</a>
+    <a href="projecten.html">Projecten</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top: 16px;">Gratis intake</a>
+  </div>
+
+  <!-- 9.1 Held -->
+  <section class="hero">
+    <div class="container" style="text-align: center;">
+      <p class="label hero-label">Kennismaken</p>
+      <h1>Laten we kennismaken.</h1>
+      <p class="hero-subtitle" style="margin: 0 auto;">Een gratis intakegesprek bij jou thuis. Geen verplichtingen.</p>
+    </div>
+  </section>
+
+  <!-- 9.2 Formulier & gegevens -->
+  <section class="features-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Formulier -->
+        <div class="reveal">
+          <form class="contact-form" action="https://formspree.io/f/info@regelwerk.nl" method="POST">
+            <div class="form-group">
+              <label for="naam" class="required">Naam</label>
+              <input type="text" id="naam" name="naam" required placeholder="Je volledige naam">
+            </div>
+            <div class="form-group">
+              <label for="email" class="required">E-mail</label>
+              <input type="email" id="email" name="email" required placeholder="jouw@email.nl">
+            </div>
+            <div class="form-group">
+              <label for="telefoon">Telefoon</label>
+              <input type="tel" id="telefoon" name="telefoon" placeholder="06 12345678">
+            </div>
+            <div class="form-group">
+              <label for="adres">Adres projectlocatie</label>
+              <input type="text" id="adres" name="adres" placeholder="Straatnaam 1, 1234 AB Plaatsnaam">
+            </div>
+            <div class="form-group">
+              <label for="type">Type project</label>
+              <select id="type" name="type">
+                <option value="">Maak een keuze</option>
+                <option value="renovatie">Renovatie</option>
+                <option value="verbouwing">Verbouwing</option>
+                <option value="uitbouw">Uitbouw</option>
+                <option value="onzeker">Nog onzeker</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="omschrijving">Korte omschrijving</label>
+              <textarea id="omschrijving" name="omschrijving" placeholder="Vertel kort wat je wilt verbouwen en wanneer je wilt starten..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Afspraak aanvragen</button>
+          </form>
+          <p style="margin-top: 16px; font-size: 14px; color: var(--secondary-blue-grey);">
+            We reageren binnen 48 uur. Bel je liever? <a href="tel:+31612345678" style="color: var(--accent-orange);">06 12345678</a>
+          </p>
         </div>
-        <a href="contact.html" class="bg-accent-orange text-white px-5 py-2.5 rounded-full font-bold shadow-sm hover:bg-[#C56536] transition text-sm">Gratis intake</a>
-    </nav>
 
-    <!-- HELD / FORMULIER SECTIE -->
-    <section class="py-12 md:py-16 px-6 md:px-12 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
-        <!-- Formulier Links -->
-        <div class="md:col-span-7 bg-white p-6 md:p-10 rounded-2xl border border-cream-border space-y-6 shadow-sm">
-            <div class="space-y-2">
-                <h1 class="text-3xl font-extrabold">Laten we kennismaken.</h1>
-                <p class="text-sm text-blauwgrijs">Vraag een gratis en vrijblijvend intakegesprek aan bij jou thuis.</p>
+        <!-- Contactgegevens -->
+        <div class="contact-info-block reveal">
+          <div class="info-item">
+            <span class="icon">📞</span>
+            <div>
+              <h4>Telefoon</h4>
+              <p><a href="tel:+31612345678">06 12345678</a></p>
+              <p style="font-size: 13px;">Maandag t/m vrijdag, 08:00–18:00</p>
             </div>
-            
-            <!-- Netlify / Formspree-ready formulier -->
-            <form action="#" method="POST" class="space-y-4 text-sm font-semibold">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="flex flex-col gap-1.5">
-                        <label>Naam (verplicht)</label>
-                        <input type="text" required class="w-full p-3 bg-warm-white border border-cream-border rounded-xl focus:outline-accent-orange">
-                    </div>
-                    <div class="flex flex-col gap-1.5">
-                        <label>E-mailadres (verplicht)</label>
-                        <input type="email" required class="w-full p-3 bg-warm-white border border-cream-border rounded-xl focus:outline-accent-orange">
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="flex flex-col gap-1.5">
-                        <label>Telefoonnummer</label>
-                        <input type="tel" class="w-full p-3 bg-warm-white border border-cream-border rounded-xl focus:outline-accent-orange">
-                    </div>
-                    <div class="flex flex-col gap-1.5">
-                        <label>Adres projectlocatie</label>
-                        <input type="text" class="w-full p-3 bg-warm-white border border-cream-border rounded-xl focus:outline-accent-orange">
-                    </div>
-                </div>
-                <div class="flex flex-col gap-1.5">
-                    <label>Type project</label>
-                    <select class="w-full p-3 bg-warm-white border border-cream-border rounded-xl focus:outline-accent-orange">
-                        <option>Complete verbouwing</option>
-                        <option>Uitbouw / aanbouw</option>
-                        <option>Renovatie</option>
-                        <option>Nog onzeker</option>
-                    </select>
-                </div>
-                <div class="flex flex-col gap-1.5">
-                    <label>Korte omschrijving van je plannen</label>
-                    <textarea rows="4" class="w-full p-3 bg-warm-white border border-cream-border rounded-xl focus:outline-accent-orange"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-accent-orange text-white p-3.5 rounded-full font-bold text-base hover:bg-[#C56536] transition shadow-sm">
-                    Afspraak aanvragen
-                </button>
-            </form>
-            <p class="text-xs text-center text-blauwgrijs pt-2">We reageren binnen 48 uur. Bel je liever direct? 06 12345678</p>
+          </div>
+          <div class="info-item">
+            <span class="icon">✉️</span>
+            <div>
+              <h4>E-mail</h4>
+              <p><a href="mailto:info@regelwerk.nl">info@regelwerk.nl</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">📍</span>
+            <div>
+              <h4>Locatie</h4>
+              <p>Mijdrecht, Utrecht</p>
+              <p style="font-size: 13px;">Werkgebied: Randstad</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">💬</span>
+            <div>
+              <h4>WhatsApp</h4>
+              <p><a href="https://wa.me/31612345678" target="_blank" rel="noopener">Direct chatten met Robin</a></p>
+            </div>
+          </div>
+
+          <div class="map-placeholder reveal" style="margin-top: 8px; max-width: 100%;">🗺️</div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Gegevens Rechts -->
-        <div class="md:col-span-5 space-y-8 flex flex-col justify-center">
-            <div class="bg-soft-beige/50 p-6 rounded-2xl border border-cream-border space-y-4">
-                <h3 class="font-bold text-lg">Directe contactgegevens</h3>
-                <div class="space-y-2 text-sm text-blauwgrijs font-medium">
-                    <p class="flex items-center gap-2">📍 Standplaats: Mijdrecht (Werkgebied Randstad)</p>
-                    <p class="flex items-center gap-2">✉️ E-mail: info@regelwerk.nl</p>
-                    <p class="flex items-center gap-2">📞 Telefoon: 06 12345678</p>
-                </div>
-            </div>
-            <!-- Simpele grafische regiokaart placeholder -->
-            <div class="bg-light-blue/40 border border-cream-border rounded-2xl p-6 text-center space-y-2">
-                <span class="text-4xl block">🗺️</span>
-                <span class="font-bold text-sm block">Actief in de regio</span>
-                <p class="text-xs text-blauwgrijs">Ronde Venen, Utrecht, Woerden, Amsterdam, Amstelveen.</p>
-            </div>
+  <!-- 9.3 FAQ -->
+  <section class="faq-section">
+    <div class="container">
+      <p class="label" style="text-align: center;">Veelgestelde vragen</p>
+      <h2 style="text-align: center;">Alles wat je wilt weten</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            Wat kost een verbouwing via Regelwerk?
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>De kosten hangen af van de omvang van je project. Tijdens het gratis intakegesprek bespreken we je wensen en maken we een transparante offerte. Geen verborgen kosten. Je weet precies waar je aan toe bent voordat we starten.</p>
+          </div>
         </div>
-    </section>
-
-    <!-- VEELGESTELDE VRAGEN (FAQ ACCORDEON) -->
-    <section class="py-16 bg-soft-beige/20 border-t border-cream-border px-6 md:px-12">
-        <div class="max-w-4xl mx-auto space-y-6">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Veelgestelde vragen</h2>
-            
-            <!-- Vraag 1 -->
-            <div class="bg-white p-5 rounded-xl border border-cream-border space-y-2">
-                <h4 class="font-bold text-base">What kost een verbouwing via Regelwerk?</h4>
-                <p class="text-sm text-blauwgrijs">We werken met een transparant, vooraf vastgesteld tarief gebaseerd op de scope van je project. Geen percentages achteraf of verborgen kosten.</p>
-            </div>
-            <!-- Vraag 2 -->
-            <div class="bg-white p-5 rounded-xl border border-cream-border space-y-2">
-                <h4 class="font-bold text-base">Hoe lang duurt een gemiddeld project?</h4>
-                <p class="text-sm text-blauwgrijs">Een uitbouw duurt gemiddeld 4 tot 6 weken, een totale renovatie kan langer duren. Je ontvangt vooraf een dagschema dat we strikt bewaken.</p>
-            </div>
-            <!-- Vraag 3 -->
-            <div class="bg-white p-5 rounded-xl border border-cream-border space-y-2">
-                <h4 class="font-bold text-base">Werken jullie met vaste partners?</h4>
-                <p class="text-sm text-blauwgrijs">Ja, we werken samen met een selecte poule van gecertificeerde, lokale vakmensen uit de regio Utrecht/Randstad waarvan we de kwaliteit persoonlijk kennen.</p>
-            </div>
-            <!-- Vraag 4 -->
-            <div class="bg-white p-5 rounded-xl border border-cream-border space-y-2">
-                <h4 class="font-bold text-base">Wat als er tijdens de bouw iets misgaat?</h4>
-                <p class="text-sm text-blauwgrijs">Omdat Robin elke dag de bouwplaats bezoekt, worden fouten direct opgemerkt en gecorrigeerd voordat ze vertraging of extra kosten opleveren.</p>
-            </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Hoe lang duurt een gemiddeld project?
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Een gemiddelde renovatie duurt 4 tot 12 weken, afhankelijk van de omvang. We maken vooraf een duidelijke planning zodat je weet waar je aan toe bent. En natuurlijk houden we je elke dag op de hoogte van de voortgang.</p>
+          </div>
         </div>
-    </section>
+        <div class="faq-item">
+          <button class="faq-question">
+            Werken jullie met vaste partners?
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Ja, we werken met een vaste groep betrouwbare vakmensen. Zij kennen onze werkwijze en kwaliteitseisen. Zo houden we alles strak geregeld en weet je zeker dat het werk goed wordt gedaan.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Wat als er iets misgaat?
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>We lossen het direct op. Robin staat elke dag op de bouwplaats en signaleert problemen voor ze groot worden. En mocht er iets zijn, dan hoor je dat meteen van ons. Geen verrassingen.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Kan ik zelf vakmensen aanbrengen?
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>In overleg is dat mogelijk. We coördineren dan alle partijen zodat iedereen op dezelfde lijn zit en het proces soepel verloopt. Het blijft ons doel: één plan, één regisseur, geen gedoe.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Werken jullie ook buiten de Randstad?
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Momenteel werken we in Mijdrecht, De Ronde Venen, Woerden, Utrecht, Amsterdam en Amstelveen. Neem contact op als je net buiten dit gebied zit, dan kijken we of het past.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Afsluitende banner -->
+  <section class="intake-banner">
+    <div class="container">
+      <h2>Heb je een vraag die hier niet tussen staat?</h2>
+      <p>Stuur een berichtje. Robin reageert persoonlijk binnen 48 uur.</p>
+      <a href="mailto:info@regelwerk.nl" class="btn btn-primary">Mail naar info@regelwerk.nl</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Regelwerk</div>
+          <p class="footer-tagline">Verbouwen zonder gedoe.<br>Elke dag op de hoogte.</p>
+        </div>
+        <div>
+          <h4>Sitemap</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="werkwijze.html">Werkwijze</a></li>
+            <li><a href="over-robin.html">Over Robin</a></li>
+            <li><a href="projecten.html">Projecten</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@regelwerk.nl">info@regelwerk.nl</a></li>
+            <li>Mijdrecht (Randstad)</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Volg ons</h4>
+          <div class="social-links">
+            <a href="#">in</a>
+            <a href="#">📷</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Regelwerk</span>
+        <span><a href="#">Privacyverklaring</a> · <a href="#">Algemene voorwaarden</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/31612345678" class="whatsapp-float" target="_blank" rel="noopener">
+    <span>💬</span>
+    <span class="whatsapp-tooltip">Direct chatten met Robin</span>
+  </a>
+
+  <div class="cookie-banner" style="display: none;">
+    <p>We gebruiken alleen functionele cookies. <a href="#">Lees meer</a></p>
+    <div class="cookie-buttons">
+      <button class="btn btn-primary cookie-accept">Akkoord</button>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
 </body>
 </html>
