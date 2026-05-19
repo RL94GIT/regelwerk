@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over Robin — Regelwerk | Van Corporate naar Bouwcoördinatie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { 'warm-white': '#FFFDF8', 'soft-beige': '#F5EFE6', 'light-blue': '#E8F3F7', 'soft-green': '#E7F4EA', 'text-dark': '#263238', 'accent-orange': '#D97745', 'blauwgrijs': '#5C7480', 'cream-border': '#E6DED3', 'footer-dark': '#1F2E35' }, fontFamily: { sans: ['Nunito', 'sans-serif'], heading: ['Manrope', 'sans-serif'] } } } }
+    </script>
+    <style>body { font-family: 'Nunito', sans-serif; background-color: #FFFDF8; color: #263238; } h1, h2, h3 { font-family: 'Manrope', sans-serif; }</style>
+</head>
+<body class="bg-warm-white text-text-dark antialiased">
 
+    <!-- NAVIGATIE -->
+    <nav class="sticky top-0 z-50 h-[72px] bg-warm-white border-b border-cream-border flex items-center justify-between px-6 md:px-12">
+        <a href="index.html" class="text-2xl font-extrabold tracking-tight text-text-dark">Regelwerk</a>
+        <div class="hidden md:flex space-x-8 font-semibold">
+            <a href="index.html" class="hover:text-accent-orange transition">Home</a>
+            <a href="werkwijze.html" class="hover:text-accent-orange transition">Werkwijze</a>
+            <a href="over-robin.html" class="text-accent-orange">Over Robin</a>
+            <a href="projecten.html" class="hover:text-accent-orange transition">Projecten</a>
+            <a href="contact.html" class="hover:text-accent-orange transition">Contact</a>
+        </div>
+        <a href="contact.html" class="bg-accent-orange text-white px-5 py-2.5 rounded-full font-bold shadow-sm hover:bg-[#C56536] transition text-sm">Gratis intake</a>
+    </nav>
+
+    <!-- VERHAAL SECTIE -->
+    <section class="py-16 px-6 md:px-12 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Foto placeholder -->
+        <div class="bg-soft-beige rounded-2xl aspect-[4/5] flex items-center justify-center border border-cream-border relative p-8">
+            <div class="text-center space-y-2">
+                <span class="text-6xl text-center block">👷‍♂️</span>
+                <span class="text-sm font-bold text-blauwgrijs">Foto van Robin Schaeffer</span>
+                <span class="text-xs text-blauwgrijs/60 block">(Authentiek & informeel op locatie)</span>
+            </div>
+        </div>
+        <!-- Inhoud -->
+        <div class="space-y-6">
+            <span class="text-xs font-bold uppercase tracking-widest text-blauwgrijs">Over Robin Schaeffer</span>
+            <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Van corporate naar bouw. Om overzicht te brengen.</h1>
+            <div class="text-base md:text-lg text-blauwgrijs leading-relaxed space-y-4">
+                <p>Na jarenlang in de corporate wereld te hebben gewerkt in strak projectmanagement, viel het me op hoe chaotisch particuliere verbouwingen vaak verlopen. Consumenten worden in het donker gelaten en spreken een andere taal dan vakmensen.</p>
+                <p>Ik besloot het roer om te gooien en Regelwerk op te richten. Geen ingewikkelde vergaderlagen of vage beloftes, maar heldere taal en directe controle. Ik sta elke dag zelf op de bouwplaats, stuur vakmensen aan en werk waar nodig gewoon mee.</p>
+                <p class="font-bold text-text-dark">"Geen corporate praatjes, maar zichtbaar resultaat en rust voor jou."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUOTES / PRINCIPES -->
+    <section class="py-16 bg-soft-beige/30 border-y border-cream-border px-6 md:px-12">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <blockquote class="border-l-4 border-accent-orange pl-4">
+                <p class="text-sm font-medium italic text-blauwgrijs">"Ik heb te vaak gezien dat klanten in het donker werden gelaten. Dat kan echt anders."</p>
+            </blockquote>
+            <blockquote class="border-l-4 border-accent-orange pl-4">
+                <p class="text-sm font-medium italic text-blauwgrijs">"De bouw zit vol met vakmensen, maar in de coördinatie gaat het mis. Daar maak ik het verschil."</p>
+            </blockquote>
+            <blockquote class="border-l-4 border-accent-orange pl-4">
+                <p class="text-sm font-medium italic text-blauwgrijs">"Structuur zonder starheid. Plannen die flexibel zijn. Elke dag weten waar je aan toe bent."</p>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- INTAKE BANNER & FOOTER REPETITIE -->
+    <section class="bg-light-blue py-12 px-6 text-center border-b border-cream-border">
+        <h2 class="text-2xl font-bold mb-2">Kennis maken met Robin?</h2>
+        <p class="text-blauwgrijs mb-4 text-sm">Plan direct je gratis intakegesprek op locatie.</p>
+        <a href="contact.html" class="inline-block bg-accent-orange text-white px-6 py-2.5 rounded-full font-bold hover:bg-[#C56536] transition">Afspraak maken</a>
+    </section>
+</body>
+</html>
