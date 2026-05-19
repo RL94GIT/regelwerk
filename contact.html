@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Veelgestelde Vragen — Regelwerk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { 'warm-white': '#FFFDF8', 'soft-beige': '#F5EFE6', 'light-blue': '#E8F3F7', 'soft-green': '#E7F4EA', 'text-dark': '#263238', 'accent-orange': '#D97745', 'blauwgrijs': '#5C7480', 'cream-border': '#E6DED3', 'footer-dark': '#1F2E35' }, fontFamily: { sans: ['Nunito', 'sans-serif'], heading: ['Manrope', 'sans-serif'] } } } }
+    </script>
+    <style>body { font-family: 'Nunito', sans-serif; background-color: #FFFDF8; color: #263238; } h1, h2, h3 { font-family: 'Manrope', sans-serif; }</style>
+</head>
+<body class="bg-warm-white text-text-dark antialiased">
 
+    <!-- NAVIGATIE -->
+    <nav class="sticky top-0 z-50 h-[72px] bg-warm-white border-b border-cream-border flex items-center justify-between px-6 md:px-12">
+        <a href="index.html" class="text-2xl font-extrabold tracking-tight text-text-dark">Regelwerk</a>
+        <div class="hidden md:flex space-x-8 font-semibold">
+            <a href="index.html" class="hover:text-accent-orange transition">Home</a>
+            <a href="werkwijze.html" class="hover:text-accent-orange transition">Werkwijze</a>
+            <a href="over-robin.html" class="hover:text-accent-orange transition">Over Robin</a>
+            <a href="projecten.html" class="hover:text-accent-orange transition">Projecten</a>
+            <a href="contact.html" class="text-accent-orange">Contact</a>
+        </div>
+        <a href="contact.html" class="bg-accent-orange text-white px-5 py-2.5 rounded-full font-bold shadow-sm hover:bg-[#C56536] transition text-sm">Gratis intake</a>
+    </nav>
+
+    <!-- HELD / FORMULIER SECTIE -->
+    <section class="py-12 md:py-16 px-6 md:px-12 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
+        <!-- Formulier Links -->
+        <div class="md:col-span-7 bg-white p-6 md:p-10 rounded-2xl border border-cream-border space-y-6 shadow-sm">
+            <div class="space-y-2">
+                <h1 class="text-3xl font-extrabold">Laten we kennismaken.</h1>
+                <p class="text-sm text-blauwgrijs">Vraag een gratis en vrijblijvend intakegesprek aan bij jou thuis.</p>
+            </div>
+            
+            <!-- Netlify / Formspree-ready formulier -->
+            <form action="#" method="POST" class="space-y-4 text-sm font-semibold">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex flex-col gap-1.5">
+                        <label>Naam (verplicht)</label>
+                        <input type="text" required class="w-full p-3 bg-warm-white border border-cream-border rounded-xl focus:outline-accent-orange">
+                    </div>
+                    <div class="flex flex-col gap-1.5">
+                        <label>E-mailadres (verplicht)</label>
+                        <input type="email" required class="w-full p-3 bg-warm-white border border-cream-border rounded-xl focus:outline-accent-orange">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex flex-col gap-1.5">
+                        <label>Telefoonnummer</label>
+                        <input type="tel" class="w-full p-3 bg-warm-white border border-cream-border rounded-xl focus:outline-accent-orange">
+                    </div>
+                    <div class="flex flex-col gap-1.5">
+                        <label>Adres projectlocatie</label>
+                        <input type="text" class="w-full p-3 bg-warm-white border border-cream-border rounded-xl focus:outline-accent-orange">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                    <label>Type project</label>
+                    <select class="w-full p-3 bg-warm-white border border-cream-border rounded-xl focus:outline-accent-orange">
+                        <option>Complete verbouwing</option>
+                        <option>Uitbouw / aanbouw</option>
+                        <option>Renovatie</option>
+                        <option>Nog onzeker</option>
+                    </select>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                    <label>Korte omschrijving van je plannen</label>
+                    <textarea rows="4" class="w-full p-3 bg-warm-white border border-cream-border rounded-xl focus:outline-accent-orange"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-accent-orange text-white p-3.5 rounded-full font-bold text-base hover:bg-[#C56536] transition shadow-sm">
+                    Afspraak aanvragen
+                </button>
+            </form>
+            <p class="text-xs text-center text-blauwgrijs pt-2">We reageren binnen 48 uur. Bel je liever direct? 06 12345678</p>
+        </div>
+
+        <!-- Gegevens Rechts -->
+        <div class="md:col-span-5 space-y-8 flex flex-col justify-center">
+            <div class="bg-soft-beige/50 p-6 rounded-2xl border border-cream-border space-y-4">
+                <h3 class="font-bold text-lg">Directe contactgegevens</h3>
+                <div class="space-y-2 text-sm text-blauwgrijs font-medium">
+                    <p class="flex items-center gap-2">📍 Standplaats: Mijdrecht (Werkgebied Randstad)</p>
+                    <p class="flex items-center gap-2">✉️ E-mail: info@regelwerk.nl</p>
+                    <p class="flex items-center gap-2">📞 Telefoon: 06 12345678</p>
+                </div>
+            </div>
+            <!-- Simpele grafische regiokaart placeholder -->
+            <div class="bg-light-blue/40 border border-cream-border rounded-2xl p-6 text-center space-y-2">
+                <span class="text-4xl block">🗺️</span>
+                <span class="font-bold text-sm block">Actief in de regio</span>
+                <p class="text-xs text-blauwgrijs">Ronde Venen, Utrecht, Woerden, Amsterdam, Amstelveen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VEELGESTELDE VRAGEN (FAQ ACCORDEON) -->
+    <section class="py-16 bg-soft-beige/20 border-t border-cream-border px-6 md:px-12">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Veelgestelde vragen</h2>
+            
+            <!-- Vraag 1 -->
+            <div class="bg-white p-5 rounded-xl border border-cream-border space-y-2">
+                <h4 class="font-bold text-base">What kost een verbouwing via Regelwerk?</h4>
+                <p class="text-sm text-blauwgrijs">We werken met een transparant, vooraf vastgesteld tarief gebaseerd op de scope van je project. Geen percentages achteraf of verborgen kosten.</p>
+            </div>
+            <!-- Vraag 2 -->
+            <div class="bg-white p-5 rounded-xl border border-cream-border space-y-2">
+                <h4 class="font-bold text-base">Hoe lang duurt een gemiddeld project?</h4>
+                <p class="text-sm text-blauwgrijs">Een uitbouw duurt gemiddeld 4 tot 6 weken, een totale renovatie kan langer duren. Je ontvangt vooraf een dagschema dat we strikt bewaken.</p>
+            </div>
+            <!-- Vraag 3 -->
+            <div class="bg-white p-5 rounded-xl border border-cream-border space-y-2">
+                <h4 class="font-bold text-base">Werken jullie met vaste partners?</h4>
+                <p class="text-sm text-blauwgrijs">Ja, we werken samen met een selecte poule van gecertificeerde, lokale vakmensen uit de regio Utrecht/Randstad waarvan we de kwaliteit persoonlijk kennen.</p>
+            </div>
+            <!-- Vraag 4 -->
+            <div class="bg-white p-5 rounded-xl border border-cream-border space-y-2">
+                <h4 class="font-bold text-base">Wat als er tijdens de bouw iets misgaat?</h4>
+                <p class="text-sm text-blauwgrijs">Omdat Robin elke dag de bouwplaats bezoekt, worden fouten direct opgemerkt en gecorrigeerd voordat ze vertraging of extra kosten opleveren.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
